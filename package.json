@@ -3,16 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "deploy": "gh-pages -d dist",
-  "build-and-deploy": "npm run build && npm run deploy"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "build-and-deploy": "npm run build && npm run deploy"
+  },
   "dependencies": {
     "@primevue/core": "^4.3.3",
     "@primevue/themes": "^4.3.3",
+    "axios": "^1.12.2",
     "bootstrap": "^5.3.3",
     "pinia": "^3.0.1",
     "primeicons": "^7.0.0",
