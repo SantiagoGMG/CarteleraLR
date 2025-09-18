@@ -7,10 +7,13 @@ import router from './router';
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 import 'primeicons/primeicons.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
 import DialogService from 'primevue/dialogservice'
 import ToastService from 'primevue/toastservice';
 
+axios.defaults.baseURL = '/api';
 
 const app = createApp(App);
 app.use(PrimeVue, {
@@ -30,5 +33,5 @@ app.use(createPinia());
 app.use(router);
 app.use(ToastService);
 app.use(DialogService);
-
+app.config.globalProperties.$axios = axios;
 app.mount('#app');
